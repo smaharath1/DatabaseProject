@@ -1,0 +1,36 @@
+Store:
+insert into store values (444,'1237 Hillview Drive, Atlanta' , '6-12', '1');
+insert into store values (478, '2732 Jenkins Road, Valdosta', '12-12', '2');
+insert into store values (590, '4235 Elk Creek Road, Dunwoody', '6-8', '3');
+insert into store values (395, '3882 Adonais Way, Norcross', '7-12', '4');
+insert into store values (123, '3543 Yorkie Lane, Statesboro', '12-8', '5');
+insert into store values (678, '2049 Mount Olive Road, Roswell', '7-9', '6');
+insert into store values (395, '2372 Limer Street, Augusta', '6-12', '7');
+insert into store values (123, '549 Holly Street, Columbus', '7-11', '8');
+insert into store values (678, '3348 Austin Avenue, Savannah', '8-8', '9');
+insert into store values (324, '377 Junkins Avenue, Lenox', '9-8', '10');
+
+Supplier:
+
+Warehouse:
+
+Delivers_to:
+
+Roles:
+insert into role values(1, 'employee');
+insert into role values(2, 'department manager');
+insert into role values(3, 'store manager');
+
+Products:
+
+Warehouse_Products:
+
+Supplier_Product:
+
+Customer:
+
+Transactions:
+
+Order_history:
+
+Purchased_goods:
