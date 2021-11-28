@@ -1,0 +1,59 @@
+1. Find the store with the highest transactions based on the time range of 2020-10-13
+
+select store_id, max(storeTotalSales)
+from store join (
+select sum(total_price) as storeTotalSales
+from transactions
+where date = '2020-10-13') as highestSales; 
+  
+2. What is the ratio of online purchases to total in-store purchases?
+
+select
+(select count(payment_type)
+from transactions
+where transaction_type = "In-store") /
+(select count(payment_type)
+from transactions) as online_to_instore_ratio
+
+3. What at the top selling product cateogories at store 444 and store 478?
+
+WITH store_444 as (
+	SELECT store_id, product_type, (COUNT(*)*product_count) as item_num 
+	FROM order_history NATURAL JOIN store NATURAL JOIN purchased_goods NATURAL JOIN products
+	WHERE store_id = 444
+	GROUP BY product_type, product_count, store_id
+	ORDER BY item_num DESC
+	LIMIT 1
+), store_478 as (
+	SELECT store_id, product_type, (COUNT(*)*product_count) as item_num 
+	FROM order_history NATURAL JOIN store NATURAL JOIN purchased_goods NATURAL JOIN products
+	WHERE store_id = 478
+	GROUP BY product_type, product_count, store_id
+	ORDER BY item_num DESC
+	LIMIT 1
+), store_444_top as (
+	SELECT store_id,product_type, sum(item_num) as items_sold FROM store_444
+	GROUP BY product_type,store_id
+	ORDER BY items_sold DESC
+	LIMIT 1
+), store_478_top as (
+	SELECT store_id,product_type, sum(item_num) as items_sold FROM store_478
+	GROUP BY product_type,store_id
+	ORDER BY items_sold DESC
+	LIMIT 1
+)
+SELECT * FROM store_444_top
+UNION 
+SELECT * FROM store_478_top
+
+4. Which suppliers were active last month for store id 444?
+
+select supplier.supplier_name, EXTRACT(MONTH FROM d.delivery_date) AS "month"
+from store s join delivers_to_store ds on s.Store_id = ds.Store_id
+join warehouse w on w.warehouse_id = ds.warehouse_id
+join delivers_to d on w.warehouse_id = d.warehouse_id
+join supplier on supplier.supplier_name = d.supplier_name
+where s.store_id = 444
+and date_part('month',d.delivery_date) = date_part('month', current_date) - 1;
+
+5.Find all customers who shop at two or more locations
