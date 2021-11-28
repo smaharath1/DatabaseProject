@@ -1,0 +1,299 @@
+insert into customer values ('000', 'Mario Kelly', '7000  GREATWOOD ALPHARETTA GA 30005-8780 USA
+', 'mthurn@verizon.net
+');
+insert into customer values ('001', 'Terri Young', '600 N BURGESS ALPHARETTA GA 30004-0811 USA
+', 'mglee@optonline.net
+');
+insert into customer values ('002', 'Hugh Santiago', '4500  MARINERS ALPHARETTA GA 30005-6507 USA
+', 'tamas@yahoo.com
+');
+insert into customer values ('003', 'Dallas Lamb', '1114  BENDLETON ALPHARETTA GA 30004-5708 USA
+', 'lushe@mac.com
+');
+insert into customer values ('004', 'Alison Black', '726  STRATFORD AVONDALE ESTATES GA 30002-1365 USA
+', 'wortmanj@live.com
+');
+insert into customer values ('005', 'Dale Black', '3300  SUNDEW ALPHARETTA GA 30005-4200 USA
+', 'alfred@aol.com
+');
+insert into customer values ('006', 'Donnie Wright', '5100  MASTERS ALPHARETTA GA 30005-8823 USA
+', 'shrapnull@outlook.com
+');
+insert into customer values ('007', 'Gilberto Stokes', '4500  MARINERS ALPHARETTA GA 30005-6507 USA
+', 'tsuruta@comcast.net
+');
+insert into customer values ('008', 'Jane Coleman', '1700  NORWICH GLEN ALPHARETTA GA 30004-0667 USA
+', 'mcraigw@aol.com
+');
+insert into customer values ('009', 'Hugo May', '1400  ADDISON ALPHARETTA GA 30005-2597 USA
+', 'hampton@optonline.net
+');
+insert into customer values ('010', 'Francisco Johnson', '1900  OVERLAND ALPHARETTA GA 30004-7874 USA
+', 'lauronen@me.com
+');
+insert into customer values ('011', 'Carlton Sparks', '5301  OLD MCGINNIS FERRY ALPHARETTA GA 30005-4321 USA
+', 'mglee@optonline.net
+');
+insert into customer values ('012', 'Robyn May', '1300 N PARK ALPHARETTA GA 30004-4946 USA
+', 'benits@live.com
+');
+insert into customer values ('013', 'Tracy Holt', '2  WILTSHIRE AVONDALE ESTATES GA 30002-1464 USA
+', 'floxy@att.net
+');
+insert into customer values ('014', 'Hugo Lloyd', '1001  CATHEDRAL ALPHARETTA GA 30004-6728 USA
+', 'lauronen@me.com
+');
+insert into customer values ('015', 'Forrest Graham', '28000  DEER ALPHARETTA GA 30004-6117 USA
+', 'lauronen@me.com
+');
+insert into customer values ('016', 'Bessie Barrett', '8065  WILLOW TREE ALPHARETTA GA 30005-4112 USA
+', 'wsnyder@icloud.com
+');
+insert into customer values ('017', 'Sandy Malone', '12801  BETHANY ALPHARETTA GA 30004-1061 USA
+', 'floxy@att.net
+');
+insert into customer values ('018', 'Warren Andrews', '200  CURIE ALPHARETTA GA 30005-3975 USA
+', 'lauronen@me.com
+');
+insert into customer values ('019', 'Samuel Johnson', '5100  MASTERS ALPHARETTA GA 30005-8823 USA
+', 'hillct@gmail.com
+');
+insert into customer values ('020', 'Ora Mckinney', '7000  GREATWOOD ALPHARETTA GA 30005-8780 USA
+', 'michiel@yahoo.com
+');
+insert into customer values ('021', 'Mattie Wallace', '200  EDINBURGH ALPHARETTA GA 30004-4956 USA
+', 'flaviog@gmail.com
+');
+insert into customer values ('022', 'Melvin Paul', '1300 N PARK ALPHARETTA GA 30004-4946 USA
+', 'jusdisgi@yahoo.com
+');
+insert into customer values ('023', 'Joseph Harper', '3300  SUNDEW ALPHARETTA GA 30005-4200 USA
+', 'payned@aol.com
+');
+insert into customer values ('024', 'Glenn Wright', '2  STAGHOUND ALPHARETTA GA 30005-42ND USA
+', 'flaviog@gmail.com
+');
+insert into customer values ('025', 'Carrie Pena', '201  CREIGHTON AVONDALE ESTATES GA 30002-11ND USA
+', 'wsnyder@icloud.com
+');
+insert into customer values ('026', 'Kari Steele', '701  BETHANY GREEN ALPHARETTA GA 30004-4500 USA
+', 'valdez@mac.com
+');
+insert into customer values ('027', 'Maureen Barrett', '3400  OLD MILTON ALPHARETTA GA 30005-3731 USA
+', 'thrymm@comcast.net
+');
+insert into customer values ('028', 'Dominick Holt', '1450  HARTFORD ALPHARETTA GA 30004-0680 USA
+', 'dodong@comcast.net
+');
+insert into customer values ('029', 'Jennifer Silva', '2853  FRANKLIN AVONDALE ESTATES GA 30002-10ND USA
+', 'chaffar@hotmail.com
+');
+insert into customer values ('030', 'Gina Harper', '2853  FRANKLIN AVONDALE ESTATES GA 30002-10ND USA
+', 'krueger@verizon.net
+');
+insert into customer values ('031', 'Woodrow Mckinney', '700  ENGLISH OAK ALPHARETTA GA 30005-8975 USA
+', 'leakin@yahoo.com
+');
+insert into customer values ('032', 'Velma Page', '5667  PRESERVE ALPHARETTA GA 30005-7201 USA
+', 'flaviog@gmail.com
+');
+insert into customer values ('033', 'Warren Johnson', '8001  WILLOW TREE ALPHARETTA GA 30005-4104 USA
+', 'dmath@msn.com
+');
+insert into customer values ('034', 'Laverne Riley', '7000  GREATWOOD ALPHARETTA GA 30005-8780 USA
+', 'krueger@verizon.net
+');
+insert into customer values ('035', 'Samuel Abbott', '1900  OVERLAND ALPHARETTA GA 30004-7874 USA
+', 'evilopie@verizon.net
+');
+insert into customer values ('036', 'Marcia Warren', '12801  DEER PARK ALPHARETTA GA 30004-8986 USA
+', 'kdawson@icloud.com
+');
+insert into customer values ('037', 'Vera Little', '5100  HAMPTONS CLUB ALPHARETTA GA 30004-3976 USA
+', 'roesch@sbcglobal.net
+');
+insert into customer values ('038', 'Hugo Steele', '15485  BIRMINGHAM ALPHARETTA GA 30004-2607 USA
+', 'brbarret@optonline.net
+');
+insert into customer values ('039', 'Emily Ryan', '1300 N PARK ALPHARETTA GA 30004-4946 USA
+', 'michiel@yahoo.com
+');
+insert into customer values ('040', 'Douglas Young', '16701  HOPEWELL ALPHARETTA GA 30004-8810 USA
+', 'lushe@mac.com
+');
+insert into customer values ('041', 'Velma Sutton', '601  CONGAREE ALPHARETTA GA 30004-7363 USA
+', 'benits@live.com
+');
+insert into customer values ('042', 'Irvin Perry', '8065  WILLOW TREE ALPHARETTA GA 30005-4112 USA
+', 'tsuruta@comcast.net
+');
+insert into customer values ('043', 'Emily Bush', '3400  OLD MILTON ALPHARETTA GA 30005-3731 USA
+', 'valdez@mac.com
+');
+insert into customer values ('044', 'Carrie Black', '6525  SHILOH ALPHARETTA GA 30005-1614 USA
+', 'dmath@msn.com
+');
+insert into customer values ('045', 'Dallas Page', '13501  LEXINGTON PLANTATION ALPHARETTA GA 30004-3466 USA
+', 'lushe@mac.com
+');
+insert into customer values ('046', 'Bobbie Carlson', '8065  WILLOW TREE ALPHARETTA GA 30005-4112 USA
+', 'hillct@gmail.com
+');
+insert into customer values ('047', 'Erin Allen', '12801  DEER PARK ALPHARETTA GA 30004-8986 USA
+', 'fatelk@live.com
+');
+insert into customer values ('048', 'Grant Young', '200  ADDISON ALPHARETTA GA 30005-2585 USA
+', 'tskirvin@yahoo.com
+');
+insert into customer values ('049', 'Guadalupe Young', '1114  BENDLETON ALPHARETTA GA 30004-5708 USA
+', 'bjoern@att.net
+');
+insert into customer values ('050', 'Eloise Patterson', '6525  SHILOH ALPHARETTA GA 30005-1614 USA
+', 'tsuruta@mac.com
+');
+insert into customer values ('051', 'Andrea Wong', '5555  WINDWARD ALPHARETTA GA 30004-7407 USA
+', 'crobles@msn.com
+');
+insert into customer values ('052', 'Jake Nash', '17300  HOPEWELL ALPHARETTA GA 30004-2581 USA
+', 'hampton@optonline.net
+');
+insert into customer values ('053', 'Ada Ruiz', '6525  SHILOH ALPHARETTA GA 30005-1614 USA
+', 'offthelip@yahoo.ca
+');
+insert into customer values ('054', 'Della Hamilton', '67  SUTTON AVONDALE ESTATES GA 30002-1565 USA
+', 'hillct@gmail.com
+');
+insert into customer values ('055', 'Robyn Mitchell', '200  ADDISON ALPHARETTA GA 30005-2585 USA
+', 'kildjean@live.com
+');
+insert into customer values ('056', 'Kari Peterson', '1450  HARTFORD ALPHARETTA GA 30004-0680 USA
+', 'pfitza@outlook.com
+');
+insert into customer values ('057', 'Woodrow Santiago', '1114  BENDLETON ALPHARETTA GA 30004-5708 USA
+', 'floxy@att.net
+');
+insert into customer values ('058', 'Alonzo Warren', '5100  MASTERS ALPHARETTA GA 30005-8823 USA
+', 'rgarton@outlook.com
+');
+insert into customer values ('059', 'Ora Robertson', '2  STAGHOUND ALPHARETTA GA 30005-42ND USA
+', 'brbarret@optonline.net
+');
+insert into customer values ('060', 'Holly Perry', '1400  ADDISON ALPHARETTA GA 30005-2597 USA
+', 'tamas@yahoo.com
+');
+insert into customer values ('061', 'Samuel Allen', '15485  BIRMINGHAM ALPHARETTA GA 30004-2607 USA
+', 'podmaster@att.net
+');
+insert into customer values ('062', 'Marco Burke', '13501  LEXINGTON PLANTATION ALPHARETTA GA 30004-3466 USA
+', 'unreal@optonline.net
+');
+insert into customer values ('063', 'Rosie Blair', '1114  BENDLETON ALPHARETTA GA 30004-5708 USA
+', 'aracne@live.com
+');
+insert into customer values ('064', 'Andrea Jefferson', '120 N AVONDALE AVONDALE ESTATES GA 30002-1396 USA
+', 'gtewari@mac.com
+');
+insert into customer values ('065', 'Gilberto Wallace', '3400  WENNINGTON ALPHARETTA GA 30004-6190 USA
+', 'zeller@yahoo.ca
+');
+insert into customer values ('066', 'Irvin Sutton', '7000  GREATWOOD ALPHARETTA GA 30005-8780 USA
+', 'pthomsen@sbcglobal.net
+');
+insert into customer values ('067', 'Della Phelps', '5301  OLD MCGINNIS FERRY ALPHARETTA GA 30005-4321 USA
+', 'oneiros@verizon.net
+');
+insert into customer values ('068', 'Francisco Sparks', '4901  CATCHEM ALPHARETTA GA 30004-3904 USA
+', 'tsuruta@comcast.net
+');
+insert into customer values ('069', 'Holly Ingram', '100  RED BANK ALPHARETTA GA 30004-2936 USA
+', 'andrei@live.com
+');
+insert into customer values ('070', 'Henrietta Stokes', '15600  BIRMINGHAM ALPHARETTA GA 30004-2686 USA
+', 'krueger@verizon.net
+');
+insert into customer values ('071', 'Freda Ruiz', '16300  MASTERS ALPHARETTA GA 30005-2016 USA
+', 'kohlis@hotmail.com
+');
+insert into customer values ('072', 'Freda Edwards', '700  ENGLISH OAK ALPHARETTA GA 30005-8975 USA
+', 'dinther@optonline.net
+');
+insert into customer values ('073', 'Alex Young', '2  DIMSDALE ALPHARETTA GA 30004-2512 USA
+', 'bradl@yahoo.ca
+');
+insert into customer values ('074', 'Russell Carroll', '2  BRANDYWINE ALPHARETTA GA 30005-39ND USA
+', 'seanq@sbcglobal.net
+');
+insert into customer values ('075', 'Emily Chavez', '6701  ULSTER ALPHARETTA GA 30005-1756 USA
+', 'lauronen@me.com
+');
+insert into customer values ('076', 'Emily Hunt', '1501  PLANTERS RIDGE ALPHARETTA GA 30004-8541 USA
+', 'msusa@outlook.com');
+insert into customer values ('077', 'Jane Hunt', '300  STEPPING STONE ALPHARETTA GA 30004-6369 USA
+', 'payned@aol.com
+');
+insert into customer values ('078', 'Johnnie Paul', '4015  NINE MCFARLAND ALPHARETTA GA 30004-8497 USA
+', 'wsnyder@icloud.com
+');
+insert into customer values ('079', 'Jerry Gutierrez', '1900  OVERLAND ALPHARETTA GA 30004-7874 USA
+', 'ajlitt@outlook.com
+');
+insert into customer values ('080', 'Woodrow Cain', '200  EDINBURGH ALPHARETTA GA 30004-4956 USA
+', 'kdawson@icloud.com
+');
+insert into customer values ('081', 'Erin Shaw', '4901  CATCHEM ALPHARETTA GA 30004-3904 USA
+', 'boftx@icloud.com
+');
+insert into customer values ('082', 'Marc Fox', '9300  MASTERS ALPHARETTA GA 30005-8840 USA
+', 'shrapnull@outlook.com
+');
+insert into customer values ('083', 'Alonzo Dean', '3460  PRESTON RIDGE ALPHARETTA GA 30005-5489 USA
+', 'podmaster@att.net
+');
+insert into customer values ('084', 'Bessie Sanders', '12101  MAGNOLIA ALPHARETTA GA 30005-4690 USA
+', 'bjoern@att.net
+');
+insert into customer values ('085', 'Bobbie Wallace', '4015  NINE MCFARLAND ALPHARETTA GA 30004-8497 USA
+', 'valdez@mac.com
+');
+insert into customer values ('086', 'Grant Stokes', '6201  DEERWOODS ALPHARETTA GA 30005-3618 USA
+', 'mhanoh@outlook.com
+');
+insert into customer values ('087', 'Mario Olson', '3480  PRESTON RIDGE ALPHARETTA GA 30005-2054 USA
+', 'flavell@optonline.net
+');
+insert into customer values ('088', 'Woodrow Watkins', '200  EDINBURGH ALPHARETTA GA 30004-4956 USA
+', 'mglee@live.com
+');
+insert into customer values ('089', 'Terence Watkins', '13100  LEXINGTON FARMS ALPHARETTA GA 30004-6779 USA
+', 'nasarius@gmail.com
+');
+insert into customer values ('090', 'Donnie Ramsey', '3900  HOLBROOK CAMPGROUND ALPHARETTA GA 30004-7010 USA
+', 'dbanarse@att.net
+');
+insert into customer values ('091', 'Woodrow Smith', '1500  PINE VALLEY ALPHARETTA GA 30004-3303 USA
+', 'fatelk@live.com
+');
+insert into customer values ('092', 'Latoya Sanders', '200  CURIE ALPHARETTA GA 30005-3975 USA
+', 'thaljef@verizon.net
+');
+insert into customer values ('093', 'Irvin Higgins', '9300  MASTERS ALPHARETTA GA 30005-8840 USA
+', 'tamas@yahoo.com
+');
+insert into customer values ('094', 'Wallace Glover', '47  HAMPSHIRE AVONDALE ESTATES GA 30002-1552 USA
+', 'jonathan@verizon.net
+');
+insert into customer values ('095', 'Bonnie Roberson', '3300  HAMBY ALPHARETTA GA 30004-2805 USA
+', 'khris@yahoo.ca
+');
+insert into customer values ('096', 'Irvin Webb', '1450  HARTFORD ALPHARETTA GA 30004-0680 USA
+', 'rgarton@outlook.com
+');
+insert into customer values ('097', 'Terence Wilson', '12101  MAGNOLIA ALPHARETTA GA 30005-4690 USA
+', 'frosal@yahoo.com
+');
+insert into customer values ('098', 'Alison Santiago', '2853  FRANKLIN AVONDALE ESTATES GA 30002-10ND USA
+', 'vsprintf@verizon.net
+');
+insert into customer values ('099', 'Alison Bush', '700  ENGLISH OAK ALPHARETTA GA 30005-8975 USA
+', 'tsuruta@comcast.net
+');
