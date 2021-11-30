@@ -5,7 +5,8 @@ Contains all the files related to our retail database.
 
 ### Description of files: 
 
-1. CreateTablesSQL.txt
+1. **CreateTablesSQL.txt**
+
 Contains the CREATE statements needed to create the tables in the diagram
   
 2. DataGeneration.txt
