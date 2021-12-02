@@ -9,7 +9,7 @@ Create table store (
 	Store_id int,
 	Location varchar(50),
 	Hours varchar(6),
-	Store_manager int,
+	Store_manager varchar(50),
 	Primary key (store_id)
 );
 
