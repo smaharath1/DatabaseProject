@@ -4,16 +4,19 @@ select store_id, max(storeTotalSales)
 from store join (
 select sum(total_price) as storeTotalSales
 from transactions
-where date = '2020-10-13') as highestSales; 
+where date = '2020-10-11') as highestSales; 
   
 -- 2. What is the ratio of online purchases to total in-store purchases?
 
 select
 (select count(payment_type)
 from transactions
-where transaction_type = "In-store") /
+where type = "In-store") /
 (select count(payment_type)
-from transactions) as online_to_instore_ratio
+from transactions) * 100 as ratio;
+
+select count(payment_type)
+from transactions;
 
 -- 3. What at the top selling product cateogories at store 444 and store 478?
 
@@ -44,7 +47,7 @@ WITH store_444 as (
 )
 SELECT * FROM store_444_top
 UNION 
-SELECT * FROM store_478_top
+SELECT * FROM store_478_top;
 
 -- 4. Which suppliers were active last month for store id 444?
 
