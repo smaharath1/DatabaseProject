@@ -5,10 +5,12 @@ Contains all the files related to our retail database.
 ## Group Members:
 * Steven Maharath
 * Arshad Zaman
-* Biozid 
+* Biozid Bostami
 * Nikhila
 
 ### Description of files: 
+
+N.B: All the queries in this repository is tested using postgresql database. Some of the queries may give error in other database due to syntax differences.
 
 1. **CreateTablesSQL.txt**
 
