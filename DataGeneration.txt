@@ -8,20 +8,13 @@ insert into customer values ('000', 'Mario Kelly', '7000  GREATWOOD ALPHARETTA G
 
 -- employee:
 insert into employee values 
-(1,'Pedro Andress', '4720', 25000, '1996-07-14', '4619 Holly Street', '7062409899', 478, 1,'2020-10-11', '2020-10-11');
-insert into employee values 
-(2,'Darrel Woodward', '6660', 60000, '1973-04-05', '4091 Flint Street', '6782097360', 478, 2,'2005-02-18', '2010-6-14');
-insert into employee values 
-(3,'Ryan Beck', '8610', 80000, '1978-04-12', '4115 Austin Avenue', '9126571456', 590, 3,'2008-01-12', '2012-7-3');
-insert into employee values 
-(4,'Misty Andrade', '7371', 30000, '1993-11-24', '2322 Junkins Avenue', '2294395524', 444, 1,'2021-06-26', '2021-06-26');
-insert into employee values 
-(5,'Debra Berry', '8064', 85000, '1977-10-17', '1248 Limer Street', '7064251772', 444, 3,'2016-09-1', '2020-09-15');
-insert into employee values 
-(6,'Justin Faust', '8065', 85000, '1978-10-17', '1268 Limer Street', '7064251773', 445, 3,'2016-09-1', '2020-05-15');
-insert into employee values 
-(7,'Steven Maharath', '8075', 87000, '1978-10-17', '1268 Limer Street', '7064251763', 455, 3,'2016-09-1', '2020-06-15');
-insert into employee values 
+(1,'Pedro Andress', '4720', 25000, '1996-07-14', '4619 Holly Street', '7062409899', 478, 1,'2020-10-11', '2020-10-11'),
+(2,'Darrel Woodward', '6660', 60000, '1973-04-05', '4091 Flint Street', '6782097360', 478, 2,'2005-02-18', '2010-6-14'),
+(3,'Ryan Beck', '8610', 80000, '1978-04-12', '4115 Austin Avenue', '9126571456', 590, 3,'2008-01-12', '2012-7-3'),
+(4,'Misty Andrade', '7371', 30000, '1993-11-24', '2322 Junkins Avenue', '2294395524', 444, 1,'2021-06-26', '2021-06-26'),
+(5,'Debra Berry', '8064', 85000, '1977-10-17', '1248 Limer Street', '7064251772', 444, 3,'2016-09-1', '2020-09-15'),
+(6,'Justin Faust', '8065', 85000, '1978-10-17', '1268 Limer Street', '7064251773', 445, 3,'2016-09-1', '2020-05-15'),
+(7,'Steven Maharath', '8075', 87000, '1978-10-17', '1268 Limer Street', '7064251763', 455, 3,'2016-09-1', '2020-06-15'),
 (8,'Satvik Seeram', '8475', 83000, '1978-11-17', '1268 Limer Street', '7064251763', 425, 3,'2016-08-1', '2020-02-15');
 -- manages:
 insert into manages values(5,4);
