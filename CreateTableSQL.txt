@@ -1,5 +1,5 @@
 CREATE TABLE customer (
-	customer_id varchar(20) PRIMARY KEY, 
+	customer_id int PRIMARY KEY, 
 	Name varchar(30), 
 	address varchar(50),
 	email varchar(20)
@@ -9,7 +9,7 @@ Create table store (
 	Store_id int,
 	Location varchar(50),
 	Hours varchar(6),
-	Store_manager varchar(50),
+	Store_manager_id int,
 	Primary key (store_id)
 );
 
@@ -61,7 +61,7 @@ product_type varchar(20),
 primary key (product_id)
 );
 
-create table delivers_to (
+create table delivers_to ( 
 supplier_name varchar(20),
 warehouse_id int,
 delivery_date  DATE NOT NULL DEFAULT (CURRENT_DATE()),  
