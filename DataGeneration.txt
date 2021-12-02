@@ -1,36 +1,107 @@
-Store:
-insert into store values (444,'1237 Hillview Drive, Atlanta' , '6-12', '1');
-insert into store values (478, '2732 Jenkins Road, Valdosta', '12-12', '2');
-insert into store values (590, '4235 Elk Creek Road, Dunwoody', '6-8', '3');
-insert into store values (395, '3882 Adonais Way, Norcross', '7-12', '4');
-insert into store values (123, '3543 Yorkie Lane, Statesboro', '12-8', '5');
-insert into store values (678, '2049 Mount Olive Road, Roswell', '7-9', '6');
-insert into store values (395, '2372 Limer Street, Augusta', '6-12', '7');
-insert into store values (123, '549 Holly Street, Columbus', '7-11', '8');
-insert into store values (678, '3348 Austin Avenue, Savannah', '8-8', '9');
-insert into store values (324, '377 Junkins Avenue, Lenox', '9-8', '10');
+-- Customer:
+insert into customer values ('000', 'Mario Kelly', '7000  GREATWOOD ALPHARETTA GA 30005-8780 USA', 'mthurn@verizon.net'),
+('001', 'Terri Young', '600 N BURGESS ALPHARETTA GA 30004-0811 USA', 'mglee@optonline.net'),
+('002', 'Hugh Santiago', '4500  MARINERS ALPHARETTA GA 30005-6507 USA', 'tamas@yahoo.com'),
+('003', 'Dallas Lamb', '1114  BENDLETON ALPHARETTA GA 30004-5708 USA', 'lushe@mac.com'),
+('004', 'Alison Black', '726  STRATFORD AVONDALE ESTATES GA 30002-1365 USA', 'wortmanj@live.com'),
+('005', 'Dale Black', '3300  SUNDEW ALPHARETTA GA 30005-4200 USA', 'alfred@aol.com');
 
-Supplier:
+-- Store:
+insert into store values (444,'1237 Hillview Drive, Atlanta' , '6-12', 'Justin Faust');
+insert into store values (478, '2732 Jenkins Road, Valdosta', '12-12', 'Eric Leffingwell');
+insert into store values (590, '4235 Elk Creek Road, Dunwoody', '6-8', 'Satvik Seeram');
+insert into store values (395, '3882 Adonais Way, Norcross', '7-12', 'Steven Maharath');
 
-Warehouse:
+-- Transactions:
+insert into transactions values(001, 001, 500, "Online", "Credit", '2020-10-11');
+insert into transactions values(002, 001, 20, "In-store", "Credit", '2020-10-11');
+insert into transactions values(003, 002, 30, "Online", "Credit", '2020-10-11');
+insert into transactions values(004, 002, 50, "In-Store", "Credit", '2020-10-11');
+insert into transactions values(005, 002, 300, "Online", "Credit", '2020-10-11');
+insert into transactions values(006, 002, 90, "Online", "Credit", '2020-10-11');
 
-Delivers_to:
+-- Order_history:
+insert into order_history values (444, 001, 001);
+insert into order_history values (444, 001, 002);
+insert into order_history values (478, 001, 003);
+insert into order_history values (478, 002, 004);
+insert into order_history values (590, 002, 005);
+insert into order_history values (590, 003, 006);
 
-Roles:
+-- Purchased_goods:
+insert into purchased_goods values(1,10,1,500) ;
+Insert into purchased_goods values(2,7,2,20);
+Insert into purchased_goods values(3,6,1,5);
+Insert into purchased_goods values(3,1,4,25);
+insert into purchased_goods values (5,9,2,260);
+insert into purchased_goods values (5,16,1,40);
+insert into purchased_goods values (6,15,2,24);
+insert into purchased_goods values (6,13,2,24);
+insert into purchased_goods values (6,12,1,8);
+insert into purchased_goods values (6,8,3,9);
+insert into purchased_goods values (6,11,1,5);
+insert into purchased_goods values (6,2,2,10);
+insert into purchased_goods values (6,4,1,12);
+insert into purchased_goods values (6,14,1,8);
+
+-- Supplier:
+insert into supplier values('Pizza Hut');
+insert into supplier values('Barilla');
+insert into supplier values('Samsung');
+
+-- Warehouse:
+INSERT INTO warehouse values(123, 'Atlanta');
+INSERT INTO warehouse values(124, 'Lindbergh');
+INSERT INTO warehouse values(125, 'sandysprings');
+
+-- Products:
+insert into products values(1, 'pizza',11,'food');
+insert into products values(2, 'pasta',12,'food');
+insert into products values(3, 'phone',13,'electronic');
+insert into products values(4, 'Windshield Wiper Blades',14,'automotive');
+insert into products values(5, 'Rubber Chew Toy',12,'pet');
+insert into products values(6, "Coca-cola 12 pack",25,'beverage');
+insert into products values(7, 'Sprite 24 pack',30, 'beverage');
+insert into products values(8, 'Disinfecting Wipes',6,'household');
+insert into products values(9, 'Apple Airpods', 5,'electronic');
+insert into products values(10, 'iPhone 11', 9,'electronic');
+insert into products values(11, 'Lysol Disinfectant Spray',20,'household');
+insert into products values(12,'Bleach',30,'household');
+insert into products values(13,'Garbage Bags',24,'household');
+insert into products values(14, 'Orange Juice',10,'beverage');
+insert into products values(15, 'Chicken Breast',22,'food');
+insert into products values(16, 'Car Playset',8,'toy');
+insert into products values(17, 'Nerf Dart Gun',4,'toy');
+
+-- Delivers_to:
+
+-- Warehouse_Products:
+insert into warehouse_products values(123, 1);
+insert into warehouse_products values(124, 2);
+insert into warehouse_products values(125, 3);
+
+-- Supplier_Product:
+insert into supplier_product values('Pizza Hut', 1);
+insert into supplier_product values('Barilla', 2);
+insert into supplier_product values('Samsung', 3);
+
+-- Roles:
 insert into role values(1, 'employee');
 insert into role values(2, 'department manager');
 insert into role values(3, 'store manager');
 
-Products:
+-- employee:
+insert into employee values 
+(1,'Pedro Andress', '4720', 25000, '1996-07-14', '4619 Holly Street', '7062409899', 478, 1,'2020-10-11', '2020-10-11');
+insert into employee values 
+(2,'Darrel Woodward', '6660', 60000, '1973-04-05', '4091 Flint Street', '6782097360', 478, 2,'2005-02-18', '2010-6-14');
+insert into employee values 
+(3,'Ryan Beck', '8610', 80000, '1978-04-12', '4115 Austin Avenue', '9126571456', 590, 3,'2008-01-12', '2012-7-3');
+insert into employee values 
+(4,'Misty Andrade', '7371', 30000, '1993-11-24', '2322 Junkins Avenue', '2294395524', 444, 1,'2021-06-26', '2021-06-26');
+insert into employee values 
+(5,'Debra Berry', '8064', 85000, '1977-10-17', '1248 Limer Street', '7064251772', 444, 3,'2016-09-1', '2020-09-15');
 
-Warehouse_Products:
+-- manages:
 
-Supplier_Product:
-
-Customer:
-
-Transactions:
-
-Order_history:
-
-Purchased_goods:
+-- delivers_to_store:
