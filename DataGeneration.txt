@@ -13,20 +13,20 @@ insert into store values (590, '4235 Elk Creek Road, Dunwoody', '6-8', 'Satvik S
 insert into store values (395, '3882 Adonais Way, Norcross', '7-12', 'Steven Maharath');
 
 -- Transactions:
-insert into transactions values(001, 001, 500, "Online", "Credit", '2020-10-11');
-insert into transactions values(002, 001, 20, "In-store", "Credit", '2020-10-11');
-insert into transactions values(003, 002, 30, "Online", "Credit", '2020-10-11');
-insert into transactions values(004, 002, 50, "In-Store", "Credit", '2020-10-11');
-insert into transactions values(005, 002, 300, "Online", "Credit", '2020-10-11');
-insert into transactions values(006, 002, 90, "Online", "Credit", '2020-10-11');
+insert into transactions values(001, '001', 500, "Online", "Credit", '2020-10-11');
+insert into transactions values(002, '001', 20, "In-store", "Credit", '2020-10-11');
+insert into transactions values(003, '002', 30, "Online", "Credit", '2020-10-11');
+insert into transactions values(004, '002', 50, "In-Store", "Credit", '2020-10-11');
+insert into transactions values(005, '002', 300, "Online", "Credit", '2020-10-11');
+insert into transactions values(006, '002', 90, "Online", "Credit", '2020-10-11');
 
 -- Order_history:
-insert into order_history values (444, 001, 001);
-insert into order_history values (444, 001, 002);
-insert into order_history values (478, 001, 003);
-insert into order_history values (478, 002, 004);
-insert into order_history values (590, 002, 005);
-insert into order_history values (590, 003, 006);
+insert into order_history values (444, '001', 001);
+insert into order_history values (444, '001', 002);
+insert into order_history values (478, '001', 003);
+insert into order_history values (478, '002', 004);
+insert into order_history values (590, '002', 005);
+insert into order_history values (590, '003', 006);
 
 -- Purchased_goods:
 insert into purchased_goods values(1,10,1,500) ;
@@ -74,6 +74,14 @@ insert into products values(16, 'Car Playset',8,'toy');
 insert into products values(17, 'Nerf Dart Gun',4,'toy');
 
 -- Delivers_to:
+insert into delivers_to values('Samsung', 123, '2021-11-24'),
+('Samsung', 124, '2021-12-01'),
+('Samsung', 125, '2021-12-08'),
+('Pizza Hut', 124, '2021-11-24'),
+('Pizza Hut', 125, '2021-12-01'),
+('Barilla', 123, '2021-11-24'),
+('Barilla', 124, '2021-12-01'),
+('Barilla', 125, '2021-12-08');
 
 -- Warehouse_Products:
 insert into warehouse_products values(123, 1);
@@ -103,5 +111,18 @@ insert into employee values
 (5,'Debra Berry', '8064', 85000, '1977-10-17', '1248 Limer Street', '7064251772', 444, 3,'2016-09-1', '2020-09-15');
 
 -- manages:
+insert into manages values(5,4),
+(4,3),
+(3,2),
+(2,1);
 
 -- delivers_to_store:
+insert into delivers_to_store values (444, 123, '2021-11-24'),
+(478, 124, '2021-11-24'),
+(590, 125, '2021-11-24'),
+(444, 123, '2021-12-01'),
+(478, 124, '2021-12-01'),
+(590, 125, '2021-12-01'),
+(444, 123, '2021-12-08'),
+(478, 124, '2021-12-08'),
+(590, 125, '2021-12-08');
