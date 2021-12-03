@@ -51,7 +51,7 @@ SELECT * FROM store_478_top;
 
 -- 4. Which suppliers were active last month for store id 444?
 
-select supplier.supplier_name, EXTRACT(MONTH FROM d.delivery_date) AS "month"
+select distinct(supplier.supplier_name)
 from store s join delivers_to_store ds on s.Store_id = ds.Store_id
 join warehouse w on w.warehouse_id = ds.warehouse_id
 join delivers_to d on w.warehouse_id = d.warehouse_id
