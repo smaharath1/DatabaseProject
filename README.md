@@ -6,7 +6,7 @@ Contains all the files related to our retail database.
 * Steven Maharath
 * Arshad Zaman
 * Biozid Bostami
-* Nikhila
+* SaiNikhila
 
 ### Description of files: 
 
