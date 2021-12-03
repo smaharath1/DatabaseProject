@@ -11,7 +11,7 @@ where date = '2020-10-11') as highestSales;
 select
 (select count(payment_type)
 from transactions
-where type = "In-store") /
+where transaction_type = "In-store") /
 (select count(payment_type)
 from transactions) * 100 as ratio;
 
