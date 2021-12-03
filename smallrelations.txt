@@ -50,3 +50,12 @@ insert into purchased_goods values (6,11,1,5);
 insert into purchased_goods values (6,2,2,10);
 insert into purchased_goods values (6,4,1,12);
 insert into purchased_goods values (6,14,1,8);
+insert into delivers_to_store values (444, 123, '2021-11-24'),
+(478, 124, '2021-11-24'),
+(590, 125, '2021-11-24'),
+(444, 123, '2021-12-01'),
+(478, 124, '2021-12-01'),
+(590, 125, '2021-12-01'),
+(444, 123, '2021-12-08'),
+(478, 124, '2021-12-08'),
+(590, 125, '2021-12-08');
