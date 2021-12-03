@@ -1,4 +1,4 @@
--- 1. Find the store with the highest transactions based on the time range of 2020-10-13
+-- 1. Find the store with the highest transactions based on the time range of 2020-10-11
 
 select store_id, max(storeTotalSales)
 from store join (
