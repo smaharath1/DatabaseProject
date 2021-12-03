@@ -13,9 +13,14 @@ insert into employee values
 (3,'Ryan Beck', '8610', 80000, '1978-04-12', '4115 Austin Avenue', '9126571456', 590, 3,'2008-01-12', '2012-7-3'),
 (4,'Misty Andrade', '7371', 30000, '1993-11-24', '2322 Junkins Avenue', '2294395524', 444, 1,'2021-06-26', '2021-06-26'),
 (5,'Debra Berry', '8064', 85000, '1977-10-17', '1248 Limer Street', '7064251772', 444, 3,'2016-09-1', '2020-09-15'),
-(6,'Justin Faust', '8065', 85000, '1978-10-17', '1268 Limer Street', '7064251773', 445, 3,'2016-09-1', '2020-05-15'),
-(7,'Steven Maharath', '8075', 87000, '1978-10-17', '1268 Limer Street', '7064251763', 455, 3,'2016-09-1', '2020-06-15'),
-(8,'Satvik Seeram', '8475', 83000, '1978-11-17', '1268 Limer Street', '7064251763', 425, 3,'2016-08-1', '2020-02-15');
+(6,'Justin Faust', '8065', 85000, '1978-10-17', '1268 Limer Street', '7064251773', 445, 2,'2016-09-1', '2020-05-15'),
+(7,'Steven Maharath', '8075', 97000, '1998-10-17', '3619 Nevada Avenue', '7028595414', 455, 3,'2013-01-1', '2017-03-19'),
+(8,'Satvik Seeram', '8475', 71000, '1993-02-2', '8529 Amoth Trail', '1769173737', 395, 3,'2019-02-14', '2020-02-15'),
+(9,'Aurora Ramos', '4140', 64000, '1991-05-17', '3037 Hovde Avenue', '4322142353', 445, 3,'2002-09-4', '2013-09-27'),
+(10,'Sutton Elener', '5297', 57000, '2001-08-6', '45 Pearson Alley', '6922015574', 425, 3,'2017-03-27', '2020-08-10'),
+(11,'Blanca Banton', '4744', 93000, '1985-06-14', '87 Victoria Trail', '6782543346', 425, 1,'2010-11-18', '2010-11-18'),
+(12,'Cristal Bozier', '1183', 28000, '2008-03-22', '52 Anderson Trail', '6148424511', 395, 1,'2008-02-16', '2008-02-16'),
+
 -- manages:
 insert into manages values(5,4);
 insert into manages values(4,3);
@@ -26,7 +31,9 @@ insert into manages values(2,1);
 insert into store values (444,'1237 Hillview Drive, Atlanta' , '6-12', 6);
 insert into store values (478, '2732 Jenkins Road, Valdosta', '12-12', 3);
 insert into store values (590, '4235 Elk Creek Road, Dunwoody', '6-8', 7);
-insert into store values (395, '3882 Adonais Way, Norcross', '7-12', '8);
+insert into store values (395, '3882 Adonais Way, Norcross', '7-12', 8);
+insert into store values (445, '3348 Austin Avenue, Savannah', '8-8', 9);
+insert into store values (425, '377 Junkins Avenue, Lenox', '9-8', 10);
 
 -- Transactions:
 insert into transactions values(001, '001', 500, "Online", "Credit", '2020-10-11');
