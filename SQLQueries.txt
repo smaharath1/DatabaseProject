@@ -1,10 +1,13 @@
--- 1. Find the store with the highest transactions based on the time range of 2020-10-11
+-- 1. Find the store with the highest transactions based on the time range of 2020-10-11 to 2020-11-30
 
-select store_id, max(storeTotalSales)
-from store join (
-select sum(total_price) as storeTotalSales
-from transactions
-where date = '2020-10-11') as highestSales; 
+select store.store_id, sum(total_price) as total_revenue
+from store, order_history, transactions
+where store.store_id = order_history.store_id 
+and transactions.transaction_id = order_history.transaction_id 
+and date between '2020-10-11' and '2020-11-30'
+group by store.store_id
+order by total_revenue desc
+limit 1
   
 -- 2. What is the ratio of online purchases to total in-store purchases?
 
