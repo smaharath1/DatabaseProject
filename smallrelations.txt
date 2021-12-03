@@ -1,8 +1,8 @@
 insert into role values(1, 'employee');
 insert into role values(2, 'department manager');
 insert into role values(3, 'store manager');
-insert into store values (444, 'Alpharetta', "6-12", 1);
-insert into store values (478, 'Gwinnett', "12-12", 2);
+insert into store values (444, 'Alpharetta', '6-12', 1);
+insert into store values (478, 'Gwinnett', '12-12', 2);
 insert into employee values 
 (1,'Arshad Zaman', '4720', 25000, '1996-07-14', '4619 Holly Street', '7062409899', 444, 1,'2020-10-11', '2020-10-11');
 insert into employee values 
