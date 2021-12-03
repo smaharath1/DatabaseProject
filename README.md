@@ -1,5 +1,6 @@
 # DatabaseProject
-
+## Link to video:
+https://youtu.be/wJ9k6ZXeHgY
 ### Summary:
 Contains all the files related to our retail database.
 ## Group Members:
