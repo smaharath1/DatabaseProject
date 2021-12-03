@@ -26,7 +26,7 @@ Create table transactions(
 
 Create table order_history(
 	Store_id int,
-	Customer_id  varchar(20),
+	Customer_id  int,
 	Transaction_id int,
 	Primary key (store_id, customer_id, transaction_id),
 	Foreign key (store_id) references store(store_id),
