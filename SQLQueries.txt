@@ -60,12 +60,12 @@ where s.store_id = 444
 and date_part('month',d.delivery_date) = date_part('month', current_date) - 1;
 
 -- 5.Find all customers who shop at two or more locations
-select customer_id , count(customer_id) as shop_count
+select customer_id , name,count(customer_id) as shop_count
 from (
-select distinct(store_id), Customer.customer_id
+select distinct(store_id), customer.customer_id, customer.name
  from Customer, Order_history
- where Order_history.customer_id = Customer.customer_id 
+ where Order_history.customer_id = customer.customer_id 
 group by Order_history.store_id, customer.customer_id
 ) as customer_visits 
-group by customer_id 
+group by customer_id, name
 having count(customer_id) > 1
