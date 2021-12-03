@@ -15,7 +15,7 @@ Create table store (
 
 Create table transactions(
 	Transaction_id	 int,
-	Customer_id varchar(20),
+	Customer_id int,
 	Total_price numeric(6,2),
 	Type varchar(10),
 	Payment_type varchar(8),
@@ -113,7 +113,7 @@ foreign key (manager_id  ) references employee (id)
 create table delivers_to_store (
 store_id int,
 warehouse_id int,
-delivery_date  DATE NOT NULL DEFAULT (current_date(),
+delivery_date  DATE NOT NULL DEFAULT (current_date),
 foreign key (store_id) references store(store_id),
 foreign key (warehouse_id) references warehouse(warehouse_id)
 );
