@@ -11,15 +11,12 @@ limit 1
   
 -- 2. What is the ratio of online purchases to total in-store purchases?
 
-select
-(select count(payment_type)
-from transactions
-where transaction_type = "In-store") /
-(select count(payment_type)
-from transactions) * 100 as ratio;
-
-select count(payment_type)
-from transactions;
+select c*100 / (select count(payment_type) from transactions) as percent
+from (
+    select count(payment_type) as c
+    from transactions
+    where lower(type) = 'in-store'
+) as in_store_purchase
 
 -- 3. What at the top selling product cateogories at store 444 and store 478?
 
