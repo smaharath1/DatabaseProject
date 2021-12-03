@@ -1,119 +1,128 @@
-CREATE TABLE customer (
-	customer_id varchar(20) PRIMARY KEY, 
-	Name varchar(30), 
-	address varchar(50),
-	email varchar(20)
-);
+-- Customer:
+insert into customer values ('000', 'Mario Kelly', '7000  GREATWOOD ALPHARETTA GA 30005-8780 USA', 'mthurn@verizon.net'),
+('001', 'Terri Young', '600 N BURGESS ALPHARETTA GA 30004-0811 USA', 'mglee@optonline.net'),
+('002', 'Hugh Santiago', '4500  MARINERS ALPHARETTA GA 30005-6507 USA', 'tamas@yahoo.com'),
+('003', 'Dallas Lamb', '1114  BENDLETON ALPHARETTA GA 30004-5708 USA', 'lushe@mac.com'),
+('004', 'Alison Black', '726  STRATFORD AVONDALE ESTATES GA 30002-1365 USA', 'wortmanj@live.com'),
+('005', 'Dale Black', '3300  SUNDEW ALPHARETTA GA 30005-4200 USA', 'alfred@aol.com');
 
-Create table store (
-	Store_id int,
-	Location varchar(50),
-	Hours varchar(6),
-	Store_manager varchar(50),
-	Primary key (store_id)
-);
+-- Store:
+insert into store values (444,'1237 Hillview Drive, Atlanta' , '6-12', 'Justin Faust');
+insert into store values (478, '2732 Jenkins Road, Valdosta', '12-12', 'Eric Leffingwell');
+insert into store values (590, '4235 Elk Creek Road, Dunwoody', '6-8', 'Satvik Seeram');
+insert into store values (395, '3882 Adonais Way, Norcross', '7-12', 'Steven Maharath');
 
-Create table transactions(
-	Transaction_id	 int,
-	Customer_id varchar(20),
-	Total_price numeric(6,2),
-	Type varchar(10),
-	Payment_type varchar(8),
-	Date date,
-	Primary key(transaction_id),
-	Foreign key (customer_id) references customer (customer_id)
-);
+-- Transactions:
+insert into transactions values(001, '001', 500, "Online", "Credit", '2020-10-11');
+insert into transactions values(002, '001', 20, "In-store", "Credit", '2020-10-11');
+insert into transactions values(003, '002', 30, "Online", "Credit", '2020-10-11');
+insert into transactions values(004, '002', 50, "In-Store", "Credit", '2020-10-11');
+insert into transactions values(005, '002', 300, "Online", "Credit", '2020-10-11');
+insert into transactions values(006, '002', 90, "Online", "Credit", '2020-10-11');
 
-Create table order_history(
-	Store_id int,
-	Customer_id  varchar(20),
-	Transaction_id int,
-	Primary key (store_id, customer_id, transaction_id),
-	Foreign key (store_id) references store(store_id),
-	Foreign key (customer_id) references customer (customer_id),
-	Foreign key (transaction_id) references transactions ( transaction_id)
-);
+-- Order_history:
+insert into order_history values (444, '001', 001);
+insert into order_history values (444, '001', 002);
+insert into order_history values (478, '001', 003);
+insert into order_history values (478, '002', 004);
+insert into order_history values (590, '002', 005);
+insert into order_history values (590, '003', 006);
 
-create table purchased_goods(
-Transaction_id int,
-product_id numeric(12,0),
-product_count int,
-product_price numeric(6,2),
-primary key(transaction_id, product_id)
-);
+-- Purchased_goods:
+insert into purchased_goods values(1,10,1,500) ;
+Insert into purchased_goods values(2,7,2,20);
+Insert into purchased_goods values(3,6,1,5);
+Insert into purchased_goods values(3,1,4,25);
+insert into purchased_goods values (5,9,2,260);
+insert into purchased_goods values (5,16,1,40);
+insert into purchased_goods values (6,15,2,24);
+insert into purchased_goods values (6,13,2,24);
+insert into purchased_goods values (6,12,1,8);
+insert into purchased_goods values (6,8,3,9);
+insert into purchased_goods values (6,11,1,5);
+insert into purchased_goods values (6,2,2,10);
+insert into purchased_goods values (6,4,1,12);
+insert into purchased_goods values (6,14,1,8);
 
-create table supplier (
-supplier_name varchar(20),
-primary key (supplier_name)
-);
+-- Supplier:
+insert into supplier values('Pizza Hut');
+insert into supplier values('Barilla');
+insert into supplier values('Samsung');
 
-create table warehouse (
-warehouse_id int,
-location varchar(50),
-primary key (warehouse_id)
-);
+-- Warehouse:
+INSERT INTO warehouse values(123, 'Atlanta');
+INSERT INTO warehouse values(124, 'Lindbergh');
+INSERT INTO warehouse values(125, 'sandysprings');
 
-create table products (
-product_id numeric(12,0),
-product_name varchar(50),
-product_stock numeric(3,0),
-product_type varchar(20),
-primary key (product_id)
-);
+-- Products:
+insert into products values(1, 'pizza',11,'food');
+insert into products values(2, 'pasta',12,'food');
+insert into products values(3, 'phone',13,'electronic');
+insert into products values(4, 'Windshield Wiper Blades',14,'automotive');
+insert into products values(5, 'Rubber Chew Toy',12,'pet');
+insert into products values(6, "Coca-cola 12 pack",25,'beverage');
+insert into products values(7, 'Sprite 24 pack',30, 'beverage');
+insert into products values(8, 'Disinfecting Wipes',6,'household');
+insert into products values(9, 'Apple Airpods', 5,'electronic');
+insert into products values(10, 'iPhone 11', 9,'electronic');
+insert into products values(11, 'Lysol Disinfectant Spray',20,'household');
+insert into products values(12,'Bleach',30,'household');
+insert into products values(13,'Garbage Bags',24,'household');
+insert into products values(14, 'Orange Juice',10,'beverage');
+insert into products values(15, 'Chicken Breast',22,'food');
+insert into products values(16, 'Car Playset',8,'toy');
+insert into products values(17, 'Nerf Dart Gun',4,'toy');
 
-create table delivers_to (
-supplier_name varchar(20),
-warehouse_id int,
-delivery_date  DATE NOT NULL DEFAULT (CURRENT_DATE()),  
-foreign key (supplier_name) references supplier(supplier_name),
-foreign key (warehouse_id) references warehouse(warehouse_id)
-);
+-- Delivers_to:
+insert into delivers_to values('Samsung', 123, '2021-11-24'),
+('Samsung', 124, '2021-12-01'),
+('Samsung', 125, '2021-12-08'),
+('Pizza Hut', 124, '2021-11-24'),
+('Pizza Hut', 125, '2021-12-01'),
+('Barilla', 123, '2021-11-24'),
+('Barilla', 124, '2021-12-01'),
+('Barilla', 125, '2021-12-08');
 
-create table warehouse_products (
-warehouse_id int,
-product_id numeric(12,0),
-foreign key (warehouse_id) references warehouse(warehouse_id),
-foreign key (product_id) references products(product_id)
-);
+-- Warehouse_Products:
+insert into warehouse_products values(123, 1);
+insert into warehouse_products values(124, 2);
+insert into warehouse_products values(125, 3);
 
-create table supplier_product (
-supplier_name varchar(20),
-product_id numeric(12,0),
-foreign key (supplier_name) references supplier(supplier_name),
-foreign key (product_id) references products(product_id)
-);
+-- Supplier_Product:
+insert into supplier_product values('Pizza Hut', 1);
+insert into supplier_product values('Barilla', 2);
+insert into supplier_product values('Samsung', 3);
 
-Create table role (
-id int, 
-name varchar(20), 
-primary key(id)
-);
+-- Roles:
+insert into role values(1, 'employee');
+insert into role values(2, 'department manager');
+insert into role values(3, 'store manager');
 
-Create table employee (id int, 
-name varchar(50), 
-ssn varchar(4), 
-salary numeric(10,2),
-DoB date, 
-address varchar(90), 
-contact varchar(10), 
-store_id int, role_id int, 
-createdAt date, 
-updatedAt date, 
-primary key (id), 
-foreign key (store_id ) references store(store_id), 
-foreign key (role_id ) references role(id) 
-) ;
+-- employee:
+insert into employee values 
+(1,'Pedro Andress', '4720', 25000, '1996-07-14', '4619 Holly Street', '7062409899', 478, 1,'2020-10-11', '2020-10-11');
+insert into employee values 
+(2,'Darrel Woodward', '6660', 60000, '1973-04-05', '4091 Flint Street', '6782097360', 478, 2,'2005-02-18', '2010-6-14');
+insert into employee values 
+(3,'Ryan Beck', '8610', 80000, '1978-04-12', '4115 Austin Avenue', '9126571456', 590, 3,'2008-01-12', '2012-7-3');
+insert into employee values 
+(4,'Misty Andrade', '7371', 30000, '1993-11-24', '2322 Junkins Avenue', '2294395524', 444, 1,'2021-06-26', '2021-06-26');
+insert into employee values 
+(5,'Debra Berry', '8064', 85000, '1977-10-17', '1248 Limer Street', '7064251772', 444, 3,'2016-09-1', '2020-09-15');
 
-Create table manages (
-employee_id int, manager_id int, 
-foreign key (employee_id ) references employee (id) ,
-foreign key (manager_id  ) references employee (id)
-);
+-- manages:
+insert into manages values(5,4),
+(4,3),
+(3,2),
+(2,1);
 
-create table delivers_to_store (
-store_id int,
-warehouse_id int,
-delivery_date  DATE NOT NULL DEFAULT (current_date()),
-foreign key (store_id) references store(store_id),
-foreign key (warehouse_id) references warehouse(warehouse_id)
-);
+-- delivers_to_store:
+insert into delivers_to_store values (444, 123, '2021-11-24'),
+(478, 124, '2021-11-24'),
+(590, 125, '2021-11-24'),
+(444, 123, '2021-12-01'),
+(478, 124, '2021-12-01'),
+(590, 125, '2021-12-01'),
+(444, 123, '2021-12-08'),
+(478, 124, '2021-12-08'),
+(590, 125, '2021-12-08');
