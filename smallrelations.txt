@@ -2,6 +2,7 @@ insert into role values(1, 'employee');
 insert into role values(2, 'department manager');
 insert into role values(3, 'store manager');
 insert into store values (444, 'Alpharetta', '6-12', 1);
+insert into store values (590, '4235 Elk Creek Road, Dunwoody', '6-8', 7);
 insert into store values (478, 'Gwinnett', '12-12', 2);
 insert into employee values 
 (1,'Arshad Zaman', '4720', 25000, '1996-07-14', '4619 Holly Street', '7062409899', 444, 1,'2020-10-11', '2020-10-11');
@@ -50,6 +51,20 @@ insert into purchased_goods values (6,11,1,5);
 insert into purchased_goods values (6,2,2,10);
 insert into purchased_goods values (6,4,1,12);
 insert into purchased_goods values (6,14,1,8);
+insert into supplier values('Pizza Hut');
+insert into supplier values('Barilla');
+insert into supplier values('Samsung');
+insert into delivers_to values('Samsung', 123, '2021-11-24'),
+('Samsung', 124, '2021-12-01'),
+('Samsung', 125, '2021-12-08'),
+('Pizza Hut', 124, '2021-11-24'),
+('Pizza Hut', 125, '2021-12-01'),
+('Barilla', 123, '2021-11-24'),
+('Barilla', 124, '2021-12-01'),
+('Barilla', 125, '2021-12-08');
+INSERT INTO warehouse values(123, 'Atlanta');
+INSERT INTO warehouse values(124, 'Lindbergh');
+INSERT INTO warehouse values(125, 'sandysprings');
 insert into delivers_to_store values (444, 123, '2021-11-24'),
 (478, 124, '2021-11-24'),
 (590, 125, '2021-11-24'),
