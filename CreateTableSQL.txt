@@ -64,7 +64,7 @@ primary key (product_id)
 create table delivers_to ( 
 supplier_name varchar(20),
 warehouse_id int,
-delivery_date  DATE NOT NULL DEFAULT (CURRENT_DATE()),  
+delivery_date  DATE NOT NULL DEFAULT (CURRENT_DATE),  
 foreign key (supplier_name) references supplier(supplier_name),
 foreign key (warehouse_id) references warehouse(warehouse_id)
 );
